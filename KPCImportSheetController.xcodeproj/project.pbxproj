@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FD1A11D1D5B1869004B05A1 /* KPCImportSheetController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FD1A11C1D5B1869004B05A1 /* KPCImportSheetController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FD1A1251D5B187D004B05A1 /* ImportSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD1A1241D5B187D004B05A1 /* ImportSheetController.swift */; };
+		9FD1A1271D5B1B7D004B05A1 /* WhiteProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD1A1261D5B1B7D004B05A1 /* WhiteProgressIndicator.swift */; };
+		9FD1A1291D5B1C34004B05A1 /* ImportBlurringWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD1A1281D5B1C34004B05A1 /* ImportBlurringWindow.swift */; };
+		9FD1A1311D5B218E004B05A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD1A1301D5B218E004B05A1 /* AppDelegate.swift */; };
+		9FD1A1331D5B218E004B05A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD1A1321D5B218E004B05A1 /* ViewController.swift */; };
+		9FD1A1351D5B218E004B05A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD1A1341D5B218E004B05A1 /* Assets.xcassets */; };
+		9FD1A1381D5B218E004B05A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD1A1361D5B218E004B05A1 /* Main.storyboard */; };
+		9FD1A13E1D5B21EB004B05A1 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD1A13D1D5B21EB004B05A1 /* WindowController.swift */; };
+		9FD1A13F1D5B223F004B05A1 /* KPCImportSheetController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD1A1191D5B1869004B05A1 /* KPCImportSheetController.framework */; };
+		9FD1A1401D5B223F004B05A1 /* KPCImportSheetController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD1A1191D5B1869004B05A1 /* KPCImportSheetController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9FD1A1451D5B2357004B05A1 /* NewStarSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FD1A1441D5B2357004B05A1 /* NewStarSheet.xib */; };
+		9FD1A1471D5B2494004B05A1 /* DarkBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD1A1461D5B2494004B05A1 /* DarkBottomSheetView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FD1A1411D5B223F004B05A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FD1A1101D5B1869004B05A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FD1A1181D5B1869004B05A1;
+			remoteInfo = KPCImportSheetController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9FD1A1431D5B223F004B05A1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9FD1A1401D5B223F004B05A1 /* KPCImportSheetController.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9FD1A1191D5B1869004B05A1 /* KPCImportSheetController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KPCImportSheetController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FD1A11C1D5B1869004B05A1 /* KPCImportSheetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPCImportSheetController.h; sourceTree = "<group>"; };
+		9FD1A11E1D5B1869004B05A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FD1A1241D5B187D004B05A1 /* ImportSheetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportSheetController.swift; sourceTree = "<group>"; };
+		9FD1A1261D5B1B7D004B05A1 /* WhiteProgressIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhiteProgressIndicator.swift; sourceTree = "<group>"; };
+		9FD1A1281D5B1C34004B05A1 /* ImportBlurringWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportBlurringWindow.swift; sourceTree = "<group>"; };
+		9FD1A12E1D5B218E004B05A1 /* KPCImportSheetControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KPCImportSheetControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FD1A1301D5B218E004B05A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9FD1A1321D5B218E004B05A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FD1A1341D5B218E004B05A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FD1A1371D5B218E004B05A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9FD1A1391D5B218E004B05A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FD1A13D1D5B21EB004B05A1 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		9FD1A1441D5B2357004B05A1 /* NewStarSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewStarSheet.xib; sourceTree = "<group>"; };
+		9FD1A1461D5B2494004B05A1 /* DarkBottomSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkBottomSheetView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FD1A1151D5B1869004B05A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FD1A12B1D5B218E004B05A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD1A13F1D5B223F004B05A1 /* KPCImportSheetController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FD1A10F1D5B1869004B05A1 = {
+			isa = PBXGroup;
+			children = (
+				9FD1A11B1D5B1869004B05A1 /* KPCImportSheetController */,
+				9FD1A12F1D5B218E004B05A1 /* KPCImportSheetControllerDemo */,
+				9FD1A11A1D5B1869004B05A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FD1A11A1D5B1869004B05A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FD1A1191D5B1869004B05A1 /* KPCImportSheetController.framework */,
+				9FD1A12E1D5B218E004B05A1 /* KPCImportSheetControllerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FD1A11B1D5B1869004B05A1 /* KPCImportSheetController */ = {
+			isa = PBXGroup;
+			children = (
+				9FD1A1241D5B187D004B05A1 /* ImportSheetController.swift */,
+				9FD1A1261D5B1B7D004B05A1 /* WhiteProgressIndicator.swift */,
+				9FD1A1281D5B1C34004B05A1 /* ImportBlurringWindow.swift */,
+				9FD1A1461D5B2494004B05A1 /* DarkBottomSheetView.swift */,
+				9FD1A11C1D5B1869004B05A1 /* KPCImportSheetController.h */,
+				9FD1A11E1D5B1869004B05A1 /* Info.plist */,
+			);
+			path = KPCImportSheetController;
+			sourceTree = "<group>";
+		};
+		9FD1A12F1D5B218E004B05A1 /* KPCImportSheetControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9FD1A1301D5B218E004B05A1 /* AppDelegate.swift */,
+				9FD1A13D1D5B21EB004B05A1 /* WindowController.swift */,
+				9FD1A1321D5B218E004B05A1 /* ViewController.swift */,
+				9FD1A1341D5B218E004B05A1 /* Assets.xcassets */,
+				9FD1A1361D5B218E004B05A1 /* Main.storyboard */,
+				9FD1A1441D5B2357004B05A1 /* NewStarSheet.xib */,
+				9FD1A1391D5B218E004B05A1 /* Info.plist */,
+			);
+			path = KPCImportSheetControllerDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9FD1A1161D5B1869004B05A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD1A11D1D5B1869004B05A1 /* KPCImportSheetController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9FD1A1181D5B1869004B05A1 /* KPCImportSheetController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FD1A1211D5B1869004B05A1 /* Build configuration list for PBXNativeTarget "KPCImportSheetController" */;
+			buildPhases = (
+				9FD1A1141D5B1869004B05A1 /* Sources */,
+				9FD1A1151D5B1869004B05A1 /* Frameworks */,
+				9FD1A1161D5B1869004B05A1 /* Headers */,
+				9FD1A1171D5B1869004B05A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KPCImportSheetController;
+			productName = KPCImportSheetController;
+			productReference = 9FD1A1191D5B1869004B05A1 /* KPCImportSheetController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9FD1A12D1D5B218E004B05A1 /* KPCImportSheetControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FD1A13A1D5B218E004B05A1 /* Build configuration list for PBXNativeTarget "KPCImportSheetControllerDemo" */;
+			buildPhases = (
+				9FD1A12A1D5B218E004B05A1 /* Sources */,
+				9FD1A12B1D5B218E004B05A1 /* Frameworks */,
+				9FD1A12C1D5B218E004B05A1 /* Resources */,
+				9FD1A1431D5B223F004B05A1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FD1A1421D5B223F004B05A1 /* PBXTargetDependency */,
+			);
+			name = KPCImportSheetControllerDemo;
+			productName = KPCImportSheetControllerDemo;
+			productReference = 9FD1A12E1D5B218E004B05A1 /* KPCImportSheetControllerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FD1A1101D5B1869004B05A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = onekiloparsec;
+				TargetAttributes = {
+					9FD1A1181D5B1869004B05A1 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					9FD1A12D1D5B218E004B05A1 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 9FD1A1131D5B1869004B05A1 /* Build configuration list for PBXProject "KPCImportSheetController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FD1A10F1D5B1869004B05A1;
+			productRefGroup = 9FD1A11A1D5B1869004B05A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FD1A1181D5B1869004B05A1 /* KPCImportSheetController */,
+				9FD1A12D1D5B218E004B05A1 /* KPCImportSheetControllerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FD1A1171D5B1869004B05A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FD1A12C1D5B218E004B05A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD1A1451D5B2357004B05A1 /* NewStarSheet.xib in Resources */,
+				9FD1A1351D5B218E004B05A1 /* Assets.xcassets in Resources */,
+				9FD1A1381D5B218E004B05A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FD1A1141D5B1869004B05A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD1A1271D5B1B7D004B05A1 /* WhiteProgressIndicator.swift in Sources */,
+				9FD1A1251D5B187D004B05A1 /* ImportSheetController.swift in Sources */,
+				9FD1A1291D5B1C34004B05A1 /* ImportBlurringWindow.swift in Sources */,
+				9FD1A1471D5B2494004B05A1 /* DarkBottomSheetView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FD1A12A1D5B218E004B05A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD1A1331D5B218E004B05A1 /* ViewController.swift in Sources */,
+				9FD1A13E1D5B21EB004B05A1 /* WindowController.swift in Sources */,
+				9FD1A1311D5B218E004B05A1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FD1A1421D5B223F004B05A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FD1A1181D5B1869004B05A1 /* KPCImportSheetController */;
+			targetProxy = 9FD1A1411D5B223F004B05A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9FD1A1361D5B218E004B05A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FD1A1371D5B218E004B05A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FD1A11F1D5B1869004B05A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9FD1A1201D5B1869004B05A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9FD1A1221D5B1869004B05A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = KPCImportSheetController/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onekiloparsec.KPCImportSheetController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9FD1A1231D5B1869004B05A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = KPCImportSheetController/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onekiloparsec.KPCImportSheetController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9FD1A13B1D5B218E004B05A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = KPCImportSheetControllerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onekiloparsec.KPCImportSheetControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9FD1A13C1D5B218E004B05A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = KPCImportSheetControllerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onekiloparsec.KPCImportSheetControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FD1A1131D5B1869004B05A1 /* Build configuration list for PBXProject "KPCImportSheetController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FD1A11F1D5B1869004B05A1 /* Debug */,
+				9FD1A1201D5B1869004B05A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FD1A1211D5B1869004B05A1 /* Build configuration list for PBXNativeTarget "KPCImportSheetController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FD1A1221D5B1869004B05A1 /* Debug */,
+				9FD1A1231D5B1869004B05A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9FD1A13A1D5B218E004B05A1 /* Build configuration list for PBXNativeTarget "KPCImportSheetControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FD1A13B1D5B218E004B05A1 /* Debug */,
+				9FD1A13C1D5B218E004B05A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FD1A1101D5B1869004B05A1 /* Project object */;
+}

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ImportSheetController" customModule="KPCImportSheetController">
+            <connections>
+                <outlet property="cancelButton" destination="51" id="c7I-eU-U9J"/>
+                <outlet property="importButton" destination="53" id="z2k-5k-S3z"/>
+                <outlet property="spinningIndicator" destination="104" id="Q1n-TC-fov"/>
+                <outlet property="window" destination="1" id="jMO-t9-Gsy"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" deferred="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="1">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="476" y="388" width="561" height="171"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <view key="contentView" id="2">
+                <rect key="frame" x="0.0" y="0.0" width="561" height="171"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView focusRingType="none" id="123" customClass="DarkBottomSheetView" customModule="KPCImportSheetController">
+                        <rect key="frame" x="0.0" y="0.0" width="561" height="50"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <customView wantsLayer="YES" id="323">
+                                <rect key="frame" x="0.0" y="0.0" width="561" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" id="51">
+                                        <rect key="frame" x="20" y="12" width="122" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" title="Cancel" bezelStyle="texturedRounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="52">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="cancelImport:" target="-2" id="rHQ-cn-cyc"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" id="53">
+                                        <rect key="frame" x="379" y="12" width="162" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" title="Import new object" bezelStyle="texturedRounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="54">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="startImport:" target="-2" id="YXF-Zj-fUH"/>
+                                        </connections>
+                                    </button>
+                                    <progressIndicator focusRingType="none" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" id="104" customClass="WhiteProgressIndicator" customModule="KPCImportSheetController">
+                                        <rect key="frame" x="355" y="17" width="16" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    </progressIndicator>
+                                </subviews>
+                            </customView>
+                        </subviews>
+                    </customView>
+                    <customView id="274">
+                        <rect key="frame" x="0.0" y="49" width="561" height="122"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <imageView id="106">
+                                <rect key="frame" x="20" y="42" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyUpOrDown" image="Star" id="107"/>
+                            </imageView>
+                            <textField toolTip="Name of the object to be observed." verticalHuggingPriority="750" id="3">
+                                <rect key="frame" x="88" y="53" width="453" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="" drawsBackground="YES" id="43">
+                                    <font key="font" size="20" name="Avenir-Light"/>
+                                    <color key="textColor" red="0.03784393892" green="0.0" blue="0.2126696706" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </customView>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="initialFirstResponder" destination="3" id="49"/>
+            </connections>
+            <point key="canvasLocation" x="338.5" y="272.5"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="Star" width="512" height="484"/>
+    </resources>
+</document>
