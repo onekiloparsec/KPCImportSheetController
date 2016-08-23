@@ -18,13 +18,18 @@ public extension NSWindow {
             self.beginSheet(sheetWindow, completionHandler: completionHandler)
         }
         
-        self.contentView!.wantsLayer = true
+        if self.contentView!.wantsLayer == false {
+            Swift.print("Warning: contentView has property wantsLayer set to false. Set it to true to avoid 1st-animation glitch.")
+            self.contentView!.wantsLayer = true
+            self.contentView!.display()
+        }
         
         let animation = CATransition()
         animation.type = kCATransitionFade
         animation.duration = 0.5
-        self.contentView!.layer?.addAnimation(animation, forKey: "layerAnimation")
         
+        self.contentView!.layer?.addAnimation(animation, forKey: "layerAnimation")
+
         let saturationFilter = CIFilter(name: "CIColorControls")!
         saturationFilter.setDefaults()
         saturationFilter.setValue(2, forKey: "inputSaturation")
@@ -40,10 +45,11 @@ public extension NSWindow {
         coverView.autoresizingMask = [.ViewWidthSizable, .ViewHeightSizable]
         coverView.layer!.opaque = false
         
-        self.contentView!.addSubview(coverView)
-        coverView.layer!.backgroundFilters = [saturationFilter, blurFilter]
         coverView.layer!.backgroundColor = NSColor(white: 0.9, alpha: 0.5).CGColor
+        coverView.layer!.backgroundFilters = [saturationFilter, blurFilter]
         
+        self.contentView!.addSubview(coverView)
+
         return coverView
     }
     

@@ -14,6 +14,12 @@ class WindowController: NSWindowController {
     var blankingView: NSView?
     var importSheetController: ImportSheetController?
     
+    override func windowDidLoad() {
+        super.windowDidLoad()
+//        self.window?.contentView?.wantsLayer = true
+//        self.window?.contentView?.layer?.display()
+    }
+    
     @IBAction func testImportSheet(sender: AnyObject?) {
         self.importSheetController = ImportSheetController(windowNibName: "NewStarSheet")
         
