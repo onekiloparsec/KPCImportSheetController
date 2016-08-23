@@ -25,6 +25,9 @@ class WindowController: NSWindowController {
         
         self.blankingView = self.window?.blurWindowContentView(withBlankingView: nil, thenBeginSheet: self.importSheetController!.window!, completionHandler: { (returnCode) in
             print("\(returnCode)")
+            self.window?.unblurWindowContentView(fromBlankingView: self.blankingView!, completionBlock: { 
+                print("ok")
+            })
         })        
     }
 }
