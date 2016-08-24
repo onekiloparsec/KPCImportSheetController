@@ -47,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9FB23C1B1D6D753F00ACFA44 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		9FD1A1191D5B1869004B05A1 /* KPCImportSheetController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KPCImportSheetController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD1A11C1D5B1869004B05A1 /* KPCImportSheetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPCImportSheetController.h; sourceTree = "<group>"; };
 		9FD1A11E1D5B1869004B05A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,6 +111,7 @@
 				9FD1A1461D5B2494004B05A1 /* DarkBottomSheetView.swift */,
 				9FD1A11C1D5B1869004B05A1 /* KPCImportSheetController.h */,
 				9FD1A11E1D5B1869004B05A1 /* Info.plist */,
+				9FB23C1B1D6D753F00ACFA44 /* README.md */,
 			);
 			path = KPCImportSheetController;
 			sourceTree = "<group>";
@@ -452,6 +454,7 @@
 				9FD1A1231D5B1869004B05A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FD1A13A1D5B218E004B05A1 /* Build configuration list for PBXNativeTarget "KPCImportSheetControllerDemo" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +463,7 @@
 				9FD1A13C1D5B218E004B05A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
