@@ -12,9 +12,9 @@ import CoreImage
 
 public extension NSWindow {
     
-    public func blurWindowContentView(withBlankingView blankingView: NSView?, thenBeginSheet sheetWindow: NSWindow, completionHandler: ((returnCode: NSModalResponse) -> Void)) -> NSView
+    public func blurWindowContentView(withBlankingView blankingView: NSView?, thenBeginSheet sheetWindow: NSWindow, completionHandler: @escaping ((_ returnCode: NSModalResponse) -> Void)) -> NSView
     {
-        NSAnimationContext.currentContext().completionHandler = {
+        NSAnimationContext.current().completionHandler = {
             self.beginSheet(sheetWindow, completionHandler: completionHandler)
         }
         
@@ -28,7 +28,7 @@ public extension NSWindow {
         animation.type = kCATransitionFade
         animation.duration = 0.5
         
-        self.contentView!.layer?.addAnimation(animation, forKey: "layerAnimation")
+        self.contentView!.layer?.add(animation, forKey: "layerAnimation")
 
         let saturationFilter = CIFilter(name: "CIColorControls")!
         saturationFilter.setDefaults()
@@ -42,10 +42,10 @@ public extension NSWindow {
         coverView.frame = self.contentView!.bounds
         coverView.wantsLayer = true
         coverView.layerUsesCoreImageFilters = true
-        coverView.autoresizingMask = [.ViewWidthSizable, .ViewHeightSizable]
-        coverView.layer!.opaque = false
+        coverView.autoresizingMask = [.viewWidthSizable, .viewHeightSizable]
+        coverView.layer!.isOpaque = false
         
-        coverView.layer!.backgroundColor = NSColor(white: 0.9, alpha: 0.5).CGColor
+        coverView.layer!.backgroundColor = NSColor(white: 0.9, alpha: 0.5).cgColor
         coverView.layer!.backgroundFilters = [saturationFilter, blurFilter]
         
         self.contentView!.addSubview(coverView)
@@ -55,15 +55,15 @@ public extension NSWindow {
     
     public func unblurWindowContentView(fromBlankingView blankingView: NSView, completionBlock:(() -> Void)?) {
         if completionBlock != nil {
-            NSAnimationContext.currentContext().completionHandler = completionBlock
+            NSAnimationContext.current().completionHandler = completionBlock
         }
         
         let animation = CATransition()
         animation.type = kCATransitionFade
         animation.duration = 0.5
-        self.contentView!.layer?.addAnimation(animation, forKey: "layerAnimation")
+        self.contentView!.layer?.add(animation, forKey: "layerAnimation")
 
         blankingView.layer?.backgroundFilters = nil
-        blankingView.layer?.backgroundColor = NSColor.clearColor().CGColor
+        blankingView.layer?.backgroundColor = NSColor.clear.cgColor
     }
 }

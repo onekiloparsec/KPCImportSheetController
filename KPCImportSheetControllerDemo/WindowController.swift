@@ -20,7 +20,7 @@ class WindowController: NSWindowController {
 //        self.window?.contentView?.layer?.display()
     }
     
-    @IBAction func testImportSheet(sender: AnyObject?) {
+    @IBAction func testImportSheet(_ sender: AnyObject?) {
         self.importSheetController = ImportSheetController(windowNibName: "NewStarSheet")
         
         self.blankingView = self.window?.blurWindowContentView(withBlankingView: nil, thenBeginSheet: self.importSheetController!.window!, completionHandler: { (returnCode) in

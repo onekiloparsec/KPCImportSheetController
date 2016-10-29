@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="ImportSheetController" customModule="KPCImportSheetController">
@@ -18,18 +18,38 @@
         <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" deferred="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="1">
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="476" y="388" width="561" height="171"/>
+            <rect key="contentRect" x="476" y="388" width="748" height="441"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
-            <view key="contentView" id="2">
-                <rect key="frame" x="0.0" y="0.0" width="561" height="171"/>
+            <view key="contentView" misplaced="YES" id="2">
+                <rect key="frame" x="0.0" y="0.0" width="748" height="441"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <customView focusRingType="none" id="123" customClass="DarkBottomSheetView" customModule="KPCImportSheetController">
-                        <rect key="frame" x="0.0" y="0.0" width="561" height="50"/>
+                    <customView misplaced="YES" id="274">
+                        <rect key="frame" x="0.0" y="52" width="748" height="389"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <subviews>
-                            <customView wantsLayer="YES" id="323">
-                                <rect key="frame" x="0.0" y="0.0" width="561" height="56"/>
+                            <imageView id="106">
+                                <rect key="frame" x="20" y="309" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyUpOrDown" image="Star" id="107"/>
+                            </imageView>
+                            <textField toolTip="Name of the object to be observed." verticalHuggingPriority="750" id="3">
+                                <rect key="frame" x="88" y="320" width="453" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="" drawsBackground="YES" id="43">
+                                    <font key="font" size="20" name="Avenir-Light"/>
+                                    <color key="textColor" red="0.03784393892" green="0.0" blue="0.2126696706" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </customView>
+                    <customView focusRingType="none" misplaced="YES" id="123" customClass="DarkBottomSheetView" customModule="KPCImportSheetController">
+                        <rect key="frame" x="0.0" y="0.0" width="748" height="50"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <customView wantsLayer="YES" misplaced="YES" id="323">
+                                <rect key="frame" x="0.0" y="0.0" width="748" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button verticalHuggingPriority="750" id="51">
@@ -47,7 +67,7 @@ Gw
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" id="53">
-                                        <rect key="frame" x="379" y="12" width="162" height="25"/>
+                                        <rect key="frame" x="566" y="12" width="162" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <buttonCell key="cell" type="roundTextured" title="Import new object" bezelStyle="texturedRounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="54">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -68,32 +88,12 @@ Gw
                             </customView>
                         </subviews>
                     </customView>
-                    <customView id="274">
-                        <rect key="frame" x="0.0" y="49" width="561" height="122"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <subviews>
-                            <imageView id="106">
-                                <rect key="frame" x="20" y="42" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyUpOrDown" image="Star" id="107"/>
-                            </imageView>
-                            <textField toolTip="Name of the object to be observed." verticalHuggingPriority="750" id="3">
-                                <rect key="frame" x="88" y="53" width="453" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="" drawsBackground="YES" id="43">
-                                    <font key="font" size="20" name="Avenir-Light"/>
-                                    <color key="textColor" red="0.03784393892" green="0.0" blue="0.2126696706" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                        </subviews>
-                    </customView>
                 </subviews>
             </view>
             <connections>
                 <outlet property="initialFirstResponder" destination="3" id="49"/>
             </connections>
-            <point key="canvasLocation" x="338.5" y="272.5"/>
+            <point key="canvasLocation" x="148" y="182.5"/>
         </window>
     </objects>
     <resources>

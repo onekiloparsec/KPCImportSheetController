@@ -8,26 +8,26 @@
 
 import Cocoa
 
-public class DarkBottomSheetView: NSView {
-    private let darkGradient = NSGradient(startingColor: NSColor(white: 0.26, alpha: 1.0),
-                                          endingColor: NSColor(white: 0.22, alpha: 1.0))!
+open class DarkBottomSheetView: NSView {
+    fileprivate let darkGradient = NSGradient(starting: NSColor(white: 0.26, alpha: 1.0),
+                                          ending: NSColor(white: 0.22, alpha: 1.0))!
     
-    override public func drawRect(dirtyRect: NSRect) {
-        super.drawRect(dirtyRect)
+    override open func draw(_ dirtyRect: NSRect) {
+        super.draw(dirtyRect)
         
-        NSGraphicsContext.currentContext()!.saveGraphicsState()
+        NSGraphicsContext.current()!.saveGraphicsState()
         let rect = self.bounds
 
         var lightLineRect = rect
         lightLineRect.origin.y += rect.size.height - 1;
         lightLineRect.size.height = 1;
-        NSColor.lightGrayColor().setFill()
+        NSColor.lightGray.setFill()
         NSRectFill(lightLineRect);
 
         var darkLineRect = self.bounds
         darkLineRect.origin.y += rect.size.height - 2;
         darkLineRect.size.height = 1;
-        NSColor.blackColor().setFill()
+        NSColor.black.setFill()
         NSRectFill(darkLineRect);
 
         let radius: CGFloat = 3.0
@@ -45,17 +45,17 @@ public class DarkBottomSheetView: NSView {
         let bottomLeftUp    = NSMakePoint(rect.origin.x, rect.origin.y + radius)
         
         let path = NSBezierPath()
-        path.moveToPoint(topLeft)
-        path.lineToPoint(topRight)
-        path.lineToPoint(bottomRightUp)
-        path.appendBezierPathWithArcFromPoint(bottomRight, toPoint:bottomRightDown, radius:radius)
-        path.lineToPoint(bottomLeftDown)
-        path.appendBezierPathWithArcFromPoint(bottomLeft, toPoint:bottomLeftUp, radius:radius)
-        path.closePath()
+        path.move(to: topLeft)
+        path.line(to: topRight)
+        path.line(to: bottomRightUp)
+        path.appendArc(from: bottomRight, to:bottomRightDown, radius:radius)
+        path.line(to: bottomLeftDown)
+        path.appendArc(from: bottomLeft, to:bottomLeftUp, radius:radius)
+        path.close()
         path.setClip()
         
-        self.darkGradient.drawInRect(path.bounds, angle:270.0)
+        self.darkGradient.draw(in: path.bounds, angle:270.0)
         
-        NSGraphicsContext.currentContext()!.restoreGraphicsState()
+        NSGraphicsContext.current()!.restoreGraphicsState()
     }
 }

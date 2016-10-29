@@ -8,28 +8,28 @@
 
 import Cocoa
 
-public class ImportSheetController: NSWindowController {
-    @IBOutlet public var cancelButton: NSButton?
-    @IBOutlet public var spinningIndicator: NSProgressIndicator?
-    @IBOutlet public var importButton: NSButton?
+open class ImportSheetController: NSWindowController {
+    @IBOutlet open var cancelButton: NSButton?
+    @IBOutlet open var spinningIndicator: NSProgressIndicator?
+    @IBOutlet open var importButton: NSButton?
 
-    public var importInputIsValid: Bool = false
+    open var importInputIsValid: Bool = false
 
-    override public func windowDidLoad() {
+    override open func windowDidLoad() {
         super.windowDidLoad()
-        self.spinningIndicator?.hidden = true
+        self.spinningIndicator?.isHidden = true
 //        self.importButton?.bind("enabled", toObject: self, withKeyPath: "importInputIsValid", options: nil)
     }
     
-    @IBAction public func startImport(_: AnyObject?) {
+    @IBAction open func startImport(_: AnyObject?) {
         
     }
 
-    @IBAction public func cancelImport(_: AnyObject?) {
+    @IBAction open func cancelImport(_: AnyObject?) {
         self.window?.sheetParent?.endSheet(self.window!, returnCode:NSModalResponseCancel)
     }
     
-    public func close(afterImportSuccess success: Bool) {
+    open func close(afterImportSuccess success: Bool) {
         self.window?.sheetParent?.endSheet(self.window!, returnCode:(success) ? NSModalResponseOK : NSModalResponseCancel)
     }
 }

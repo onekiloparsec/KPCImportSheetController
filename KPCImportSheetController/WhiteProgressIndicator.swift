@@ -8,7 +8,7 @@
 
 import Cocoa
 
-public class WhiteProgressIndicator: NSProgressIndicator {
+open class WhiteProgressIndicator: NSProgressIndicator {
     required public init?(coder: NSCoder) {
         super.init(coder: coder)
         self.setup()
@@ -19,7 +19,7 @@ public class WhiteProgressIndicator: NSProgressIndicator {
         self.setup()
     }
     
-    private func setup() {
+    fileprivate func setup() {
         let lighten = CIFilter(name: "CIColorControls")!
         lighten.setDefaults()
         lighten.setValue(1, forKey: "inputBrightness")
